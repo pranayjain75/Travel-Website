@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Destination Anywhere</title>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/indexCSS.css" />
+</head>
+
+<body>
+  <div class="height5">
+    <% include partials/header.ejs %>
+  </div>
+  <div class="container">
+    <div id="navDiv" class="navDiv">
+      <% include partials/user-navigation.ejs %>
+    </div>
+    <div class="content">
+      <% include partials/site-navigation.ejs %>
+      <div id="view">
+        <%- include(pageName) %>
+      </div>
+    </div>
+  </div>
+  <% include partials/footer.ejs %>
+
+</body>
+
+</html>
